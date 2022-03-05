@@ -15,13 +15,12 @@ public class AnswerServiceImpl implements AnswerService {
 	AnswerRepository ansowerRepository;
 
 	@Override
-	public AnswerCalculated saveAnsower(Answer ansower) {
+	public void saveAnsower(Answer ansower) {
 		ansowerRepository.save(ansower);
-		
-		return calculate(ansower);
 	}
 
-	private AnswerCalculated calculate(Answer ansower) {		
+	@Override
+	public AnswerCalculated calculate(Answer ansower) {		
 		 ansower.toString(); 
 		return null;
 	}

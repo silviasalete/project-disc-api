@@ -4,6 +4,6 @@ import com.disc.model.Answer;
 import com.disc.model.AnswerCalculated;
 
 public interface AnswerService {
-
-	AnswerCalculated saveAnsower(Answer ansower);
+	void saveAnsower(Answer ansower);
+	AnswerCalculated calculate(Answer ansower);
 }
